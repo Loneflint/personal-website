@@ -1,0 +1,14 @@
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    background: linear-gradient(124.98deg, #2AF5FF -27.42%, #247BA0 9.99%, #1D5B80 24.95%, #163A5F 47.4%, #101D42 78.68%, #0D1317 103.17%);
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    
+    
+ }
