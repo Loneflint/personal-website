@@ -1,0 +1,80 @@
+.img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 60px;
+}
+body {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  background: #fff;
+}
+
+.mouse-gradient {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+      circle farthest-side at bottom left,
+      rgba(42, 245, 255), 
+      rgba(38, 173, 166, .0001)
+    );
+  transition: background .6s ease-in-out;
+}
+
+.element {
+  width: 100vw;
+  height: 100vh;
+  background: 
+    radial-gradient(
+      circle farthest-side at top left,
+      rgba(13, 19, 23), 
+      rgba(86, 199, 181, .0001)
+    ),
+    radial-gradient(
+      farthest-side at bottom left,
+      rgba(13, 19, 23), 
+      rgba(133, 208, 213, .0001)
+    ),
+    radial-gradient(
+      farthest-corner at 0% 50%,
+      rgba(42, 245, 255), 
+      rgba(232, 241, 134, .0001)
+    ),
+     radial-gradient(
+      closest-side at 100% 0%,
+      rgba(13, 19, 23), 
+      rgba(153, 216, 208, .0001)
+    ),
+    radial-gradient(
+      farthest-corner at top right, rgba(16, 29, 66), rgba(16, 29, 66), rgba(16, 29, 66)
+    ),
+    radial-gradient(
+    farthest-corner at bottom right, rgba(13, 19, 23), rgba(13, 19, 23));
+  background-size: 150% 150%;
+  background-position: center center;
+/* 	animation: gradient 15s ease infinite; */
+  transition: background-position .6s ease-in-out;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: left top;
+	}
+	25% {
+		background-position: right top;
+	}
+  50% {
+		background-position: right bottom;
+	}
+  75% {
+		background-position: left bottom;
+	}
+	100% {
+		background-position: left top;
+	}
+}
